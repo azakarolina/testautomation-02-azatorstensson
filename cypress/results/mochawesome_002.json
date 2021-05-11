@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-05-11T02:03:55.713Z",
+    "end": "2021-05-11T02:05:14.762Z",
+    "duration": 79049,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2b6839f7-f531-46d7-a096-960e0d155e8d",
+      "title": "",
+      "fullFile": "cypress/integration/hello-percy.spec.js",
+      "file": "cypress/integration/hello-percy.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a9775730-7578-4f51-9b2d-0fa76af922c8",
+          "title": "First example",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test case 1",
+              "fullTitle": "First example Test case 1",
+              "timedOut": null,
+              "duration": 74086,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/login');\ncy.title().should('eq', 'Testers Hotel');\ncy.contains('Login');\ncy.percySnapshot('index-page'); //now we are at the log in page\ncy.log('At login page!');\ncy.percySnapshot('index-page');\ncy.get(':nth-child(1) > input').type('tester01');\ncy.get(':nth-child(2) > input').type('GteteqbQQgSr88SwNExUQv2ydb7xuf8c');\ncy.get('.btn').click();\ncy.contains('Welcome tester01!');\ncy.wait(5000);\ncy.log('At dashboard page!');\ncy.percySnapshot('dashboard-page');\ncy.get(':nth-child(1) > .btn').click();\ncy.wait(5000);\ncy.log('At room page!');\ncy.contains('Room');\ncy.wait(5000);\ncy.log('At room page!');\ncy.percySnapshot('room page');\ncy.get(':nth-child(3) > .btn').click();\ncy.contains('Welcome tester01!');\ncy.wait(5000);\ncy.log('At dashboard page!');\ncy.get(':nth-child(3) > .btn').click();\ncy.log('At bills page!');\ncy.contains('Bills');\ncy.wait(5000);\ncy.percySnapshot('bills page');\ncy.get(':nth-child(3) > .btn').click();\ncy.contains('Welcome tester01!');\ncy.wait(5000);\ncy.log('At dashboard page!');\ncy.get(':nth-child(4) > .btn').click();\ncy.wait(5000);\ncy.log('At reservation page!');\ncy.contains('Reservations');\ncy.wait(5000);\ncy.log('At reservation page!');\ncy.percySnapshot('reservation page');\ncy.get(':nth-child(3) > .btn').click();\ncy.contains('Welcome tester01!');\ncy.wait(5000);\ncy.log('At dashboard page!'); //cy.get(':nth-child(2) > .btn').click()\n//cy.log('At client page!')\n//cy.contains('Clients')\n//cy.wait(5000)\n//cy.percySnapshot('clients page')",
+              "err": {},
+              "uuid": "27c8bb6b-283e-4fc0-a24f-34d62e1fdaf1",
+              "parentUUID": "a9775730-7578-4f51-9b2d-0fa76af922c8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "27c8bb6b-283e-4fc0-a24f-34d62e1fdaf1"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 74086,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
