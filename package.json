@@ -7,7 +7,7 @@
     "cypress:open": "cypress open",
     "test": "echo \"Error: no test specified\" && exit 1",
     "cypress:run": "cypress run --spec cypress/integration/assignment02.spec.js",
-    "test:vrt":"percy exec cypress run --spec cypress/integration/hello-percy.spec.js"
+    "test:vrt": "percy exec cypress run --spec cypress/integration/hello-percy.spec.js"
   },
   "keywords": [],
   "author": "",

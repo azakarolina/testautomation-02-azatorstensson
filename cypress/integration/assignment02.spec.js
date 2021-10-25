@@ -1,4 +1,4 @@
-/// <reference types="cypress" />
+// <reference types="Cypress" />
 import * as acreatebillPage from "../pages/acreatebill-page"
 import * as acreateclientPage from "../pages/acreateclient-page"
 import * as acreatenewbillPage from "../pages/acreatenewbill-page"
